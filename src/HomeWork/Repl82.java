@@ -7,7 +7,7 @@ while(num<20) {
 		System.out.println(num+" ");
 		num++;
 	}else {
-		num++;
+	num++;
 	}
 }
 }

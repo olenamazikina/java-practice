@@ -5,7 +5,7 @@ public class CulculatorTests {
 		Calculator.add(5, 7);//call add method from Calculator class
 		Calculator.multiply(3, 2);//it will go  multiply method and run the code 
 		Calculator.divide(26, 2);
-		
+		Calculator.multiply(4,2);
 	}
 
 }

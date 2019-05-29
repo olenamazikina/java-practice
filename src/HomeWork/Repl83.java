@@ -2,19 +2,24 @@ package HomeWork;
 import java.util.*;
 public class Repl83 {
 	  public static void main(String[] args) {
-	    Scanner scan = new Scanner(System.in);
+	    Scanner input = new Scanner(System.in);
 	 String name;
-	 boolean ansver;
-	 System.out.println("Please enter guest name: ");
-	 name=scan.next();
-	 System.out.println("Do you want to enter new guest name: ");
-     ansver=scan.nextBoolean();
-     if (ansver==no) {
-    	 break;
-    	 System.out.println("Guest's list: "+name+", ");
+	 String newguest;
+	 String guestlist="";
+	 do {
+		 System.out.println("Please enter guest name:");
+		 name=input.next();
+		 guestlist=guestlist+name;
+		 System.out.println("Do you want to enter new guest name?");
+		 newguest=input.next();
+		 if(newguest.equalsIgnoreCase("Yes")) {
+			 guestlist=guestlist+", ";
+		 } 
+		 }
+		 while(newguest.equalsIgnoreCase("Yes"));
+			 System.out.println("Guest's list:"+guestlist);
+		 }
      }
-	}
 	  
-	  }
 
 
